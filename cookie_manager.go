@@ -141,3 +141,7 @@ func (m *CookieManager) CookieMaxAgeSec() int {
 func (m *CookieManager) CookiePath() string {
 	return m.cookiePath
 }
+
+func (m *CookieManager) Len() int {
+	return m.store.Len()
+}

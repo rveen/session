@@ -28,4 +28,7 @@ type Manager interface {
 
 	// Close closes the session manager, releasing any resources that were allocated.
 	Close()
+
+	// Len returns the number of open sessions
+	Len() int
 }

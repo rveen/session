@@ -22,4 +22,7 @@ type Store interface {
 
 	// Close closes the session store, releasing any resources that were allocated.
 	Close()
+
+	// Len returns the number of open sessions
+	Len() int
 }

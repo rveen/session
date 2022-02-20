@@ -162,3 +162,7 @@ func (s *inMemStore) Remove(sess Session) {
 func (s *inMemStore) Close() {
 	close(s.closeTicker)
 }
+
+func (s *inMemStore) Len() int {
+	return len(s.sessions)
+}
